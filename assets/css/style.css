@@ -375,6 +375,9 @@ footer .line {
 .s-background-color{
     background: var(--background-second-c-hex); 
 }
+.star{
+    color: #4f4b4c;
+}
 /* switch settings 👇 */
 
 .ui-switch {
