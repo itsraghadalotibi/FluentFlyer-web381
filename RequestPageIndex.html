@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Requests</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="icon" type="image/x-icon" href="assets/images/contries.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" style="background-color:  #000023;">
+
+    <!-- NAVBARrr -->
+    <nav class="navbar navbar-expand-lg sticky-top " style="background-color:  #000023;">
+        <div class="container" style="color:  #000023;">
+            <a class="navbar-brand" href="#">
+                <h3>Fluent<span>Flyer</span></h3>
+            </a>
+            <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon bg-light"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav" style="color:  #000023;">
+                <ul class="navbar-nav ms-auto" style="padding-right: 20%;">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#hero">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Become a Partner</a>
+                    </li>
+                </ul>
+                <a href="#" class="btn btn-brand ms-lg-3">Learners area</a>
+                <label class="ui-switch">
+                    <input type="checkbox">
+                    <div class="slider">
+                      <div class="circle"></div>
+                    </div>
+                </label>                  
+            </div>
+        </div>
+    </nav>
+
+<!-- Table -->
+<center><main class="table" id="customers_table" style="background-color: #1d1d38 ">
+    <section class="table__header">
+        <h1>Requests</h1>
+        <div class="input-group">
+            <input type="search" placeholder="Search Data...">
+            
+        </div>
+        
+    </section>
+    <section class="table__body">
+        <table id="newtable">
+            <thead>
+                <tr>
+                    <th> Id <span class="icon-arrow">&UpArrow;</span></th>
+                    <th> Partner <span class="icon-arrow">&UpArrow;</span></th>
+                    <th> Language <span class="icon-arrow">&UpArrow;</span></th>
+                    <th> Request Date <span class="icon-arrow">&UpArrow;</span></th>
+                    <th> Status <span class="icon-arrow">&UpArrow;</span></th>
+                    <th> Price <span class="icon-arrow">&UpArrow;</span></th>
+                    <th> Action </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td> 1 </td>
+                    <td> <img src="images/Alson GC.jpg" alt="">Alson GC</td>
+                    <td> English </td>
+                    <td> 17 Dec, 2022 </td>
+                    <td>
+                        <p class="status delivered">Accepted</p>
+                    </td>
+                    <td> <strong> $128.90 </strong></td>
+                    <td>
+                        <button><i class="fa-solid fa-pen-to-square"></i></button>
+                        
+                        <button onclick="document.getElementById(
+                            'newtable').deleteRow(1)"><i class="fa-solid fa-xmark"></i></button>
+                    </td>
+                </tr>
+                <tr>
+                    <td> 2 </td>
+                    <td><img src="images\AlfredHitchcock.jpg" alt=""> Alfred Hitchcock</td>
+                    <td> English </td>
+                    <td> 27 Aug, 2023 </td>
+                    <td>
+                        <p class="status cancelled">Rejected</p>
+                    </td>
+                    <td> <strong>$50.50</strong> </td>
+                    <td>
+                        <button><i class="fa-solid fa-pen-to-square"></i></button>
+                        <button onclick="document.getElementById(
+                            'newtable').deleteRow(1)"><i class="fa-solid fa-xmark"></i></button>
+                        
+                    </td>
+                </tr>
+                <tr>
+                    <td> 3</td>
+                    <td><img src="images/Sonal Gharti.jpg" alt=""> Sonal Gharti </td>
+                    <td> Japaness </td>
+                    <td> 14 Mar, 2023 </td>
+                    <td>
+                        <p class="status pending">Pending</p>
+                    </td>
+                    <td> <strong>$210.40</strong> </td>
+                    <td>
+                        <button><i class="fa-solid fa-pen-to-square"></i></button>
+                        <button onclick="document.getElementById(
+                            'newtable').deleteRow(1)"><i class="fa-solid fa-xmark"></i></button>
+                    </td>
+                </tr>
+                <tr>
+                    <td> 4</td>
+                    <td><img src="images/Zinzu Chan Lee.jpg" alt="">Zinzu Chan Lee</td>
+                    <td> Korean </td>
+                    <td> 25 May, 2023 </td>
+                    <td>
+                        <p class="status delivered">Accepted</p>
+                    </td>
+                    <td> <strong>$149.70</strong> </td>
+                    <td>
+                        <button><i class="fa-solid fa-pen-to-square"></i></button>
+                        <button onclick="document.getElementById(
+                            'newtable').deleteRow(1)"><i class="fa-solid fa-xmark"></i></button>
+                    </td>
+                </tr>
+                <tr>
+                    <td> 5</td>
+                    <td><img src="images/Sarita Limbu.jpg" alt=""> Sarita Limbu </td>
+                    <td> French </td>
+                    <td> 23 Apr, 2023 </td>
+                    <td>
+                        <p class="status pending">Pending</p>
+                    </td>
+                    <td> <strong>$39.99</strong> </td>
+                    <td>
+                        <button><i class="fa-solid fa-pen-to-square"></i></button>
+                        <button  onclick="document.getElementById(
+                            'newtable').deleteRow(1)"><i class="fa-solid fa-xmark"></i></button>
+                    </td>
+                </tr>
+                <tr>
+                    <td> 6</td>
+                    <td><img src="images/Alex Gonley.jpg" alt=""> Alex Gonley </td>
+                    <td> English </td>
+                    <td> 23 Apr, 2023 </td>
+                    <td>
+                        <p class="status cancelled">Rejected</p>
+                    </td>
+                    <td> <strong>$99.99</strong> </td>
+                    <td>
+                        <button><i class="fa-solid fa-pen-to-square"></i></button>
+                        <button  onclick="document.getElementById(
+                            'newtable').deleteRow(1)"><i class="fa-solid fa-xmark"></i></button>
+                    </td>
+                </tr>
+                <tr>
+                    <td> 7</td>
+                    <td><img src="images/Alson GC.jpg" alt=""> Jeet Saru </td>
+                    <td> Spanish </td>
+                    <td> 20 May, 2023 </td>
+                    <td>
+                        <p class="status delivered">Accepted</p>
+                    </td>
+                    <td> <strong>$39.99</strong> </td>
+                    <td>
+                        <button><i class="fa-solid fa-pen-to-square"></i></button>
+                        <button  onclick="document.getElementById(
+                            'newtable').deleteRow(1)"><i class="fa-solid fa-xmark"></i></button>
+                    </td>
+                </tr>
+                <tr>
+                    <td> 8</td>
+                    <td><img src="images/Sarita Limbu.jpg" alt=""> Aayat Ali Khan </td>
+                    <td> Spanish </td>
+                    <td> 30 Feb, 2023 </td>
+                    <td>
+                        <p class="status pending">Pending</p>
+                    </td>
+                    <td> <strong>$149.70</strong> </td>
+                    <td>
+                        <button><i class="fa-solid fa-pen-to-square"></i></button>
+                        <button onclick="document.getElementById(
+                            'newtable').deleteRow(1)"><i class="fa-solid fa-xmark"></i></button>
+                    </td>
+                </tr>
+                
+            </tbody>
+        </table>
+    </section>
+</main></center>
+<script src="script.js"></script>
+
+<footer class="myfooter" style="background-color:  #000023;">
+    <div class="footer-top">
+        <div class="container">
+            <div class="row gy-5">
+                <div class="col-lg-3 col-sm-6">
+                    <h5 class="mb-0 text-white">FluentFlyer</h5>
+                    <div class="line"></div>
+                    <p>Follow us:</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="ri-twitter-fill png"></i></a>
+                        <a href="#"><i class="ri-instagram-fill png"></i></a>
+                        <a href="#"><i class="ri-github-fill png"></i></a>
+                        <a href="#"><i class="ri-dribbble-fill png"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <h5 class="mb-0 text-white">LANGUAGES</h5>
+                    <div class="line"></div>
+                    <ul>
+                        <li><a href="#">English</a></li>
+                        <li><a href="#">Spanich</a></li>
+                        <li><a href="#">French</a></li>
+                        <li><a href="#">Korean</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <h5 class="mb-0 text-white">ABOUT</h5>
+                    <div class="line"></div>
+                    <ul>
+                        <li><a href="#hero">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#about">About us</a></li>
+                        <li><a href="#reviews">Reviews</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <h5 class="mb-0 text-white">CONTACT</h5>
+                    <div class="line"></div>
+                    <ul>
+                        <li>Saudi arabia</li>
+                        <li>www.FluentFlyer.com</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="row g-4 justify-content-between">
+                <div class="col-auto">
+                    <p class="mb-0">© Copyright FluentFlyer. All Rights Reserved</p>
+                </div>
+                <div class="col-auto">
+                    <p class="mb-0">Designed with 💜 By SWE students</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<script src="https://unpkg.com/scrollreveal"></script>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
