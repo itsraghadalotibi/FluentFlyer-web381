@@ -99,13 +99,13 @@ a{
     transition: background-color 0.3s, transform 0.3s;
 }
 .social-container a:hover {
-    background-color: #f9004d; /* Change to your desired hover color */
+    background-color: #f9004d; 
     transform: scale(1.1);
 }
 
 .social-container a i {
-    color: #000023; /* Change to your desired icon color */
-    font-size: 20px; /* Change to your desired icon size */
+    color: #000023; 
+    font-size: 20px; 
 }
 
 .form-container input{
