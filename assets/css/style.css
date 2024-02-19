@@ -471,25 +471,6 @@ footer .line {
   height: 0;
 }
 
-.main-nav {
-    padding: 80px 10px ;
-    text-align: center;
-  }
-
-  .main-nav a {
-    text-decoration: none;
-    color: #000023;
-    padding: 10px 20px;
-    margin: 0 10px;
-    border-radius: 7px;
-    background-color: #ffffff;
-    font-family: var(--font-base);
-  }
-
-  .main-nav a:hover {
-    background-color: #ccc;
-  }
-
   .sessions-container {
   display: flex;
   flex-wrap: wrap;
@@ -614,4 +595,26 @@ footer .line {
     color: black;
     text-decoration: none;
     cursor: pointer;
+}
+
+
+/* Albatool css */
+.main-nav {
+    padding-top: 100px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: #000023;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 7px;
+    background-color: #ffffff;
+    font-family: var(--font-base);
+}
+
+.main-nav a:hover {
+    background-color: #ccc;
 }
