@@ -82,18 +82,30 @@ a{
 }
 
 .social-container{
-    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .social-container a{
-    height: 40px;
-    width: 40px;
-    border: 1px solid #ddd;
-    border-radius: 50%;
     display: inline-flex;
     justify-content: center;
     align-items: center;
+    width: 40px;
+    height: 40px;
     margin: 0 5px;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    transition: background-color 0.3s, transform 0.3s;
+}
+.social-container a:hover {
+    background-color: #f9004d; /* Change to your desired hover color */
+    transform: scale(1.1);
+}
+
+.social-container a i {
+    color: #000023; /* Change to your desired icon color */
+    font-size: 20px; /* Change to your desired icon size */
 }
 
 .form-container input{
