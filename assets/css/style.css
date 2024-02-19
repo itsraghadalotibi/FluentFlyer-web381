@@ -14,7 +14,7 @@
     --background-second-c-hex:#3F4170;
     --background-shadow: 0px 1px 5px #373741;
     --c-dark: white;
-    --c-brand: #f9004d;
+    --c-brand: rgb(249, 0, 77);
     --c-brand-light: #ff2460;
     --c-brand-rgb: 78, 87, 212;
     --c-body: white; 
@@ -53,6 +53,11 @@ a:hover {
 img {
     max-width: 100%;
     height: auto;
+}
+
+.logo {
+    font-size: 27px; 
+    color: var(--c-brand);
 }
 
 .section-padding {
@@ -263,7 +268,10 @@ span{
     background-color: white;
     transform: rotate(45deg);
 }
-
+.navbar-brand {
+    display: flex;
+    align-items: center;
+}
 /* TEAM */
 .team-member-content {
     background-color: var(--c-brand);
